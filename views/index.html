@@ -4,7 +4,10 @@
 <table cellpadding="4">
   {% for type in types %}
   <tr>
-    <td><a href="" class="showMarketDetails" data-typeid="{{ type.typeID }}">{{ type.typeName }}</a></td>
+    <td>
+      <a href="" class="showMarketDetails" data-typeid="{{ type.typeID }}">{{ type.typeName }}</a>
+      <a href="http://eve-marketdata.com/price_check.php?type_name_header={{ type.typeName | urlencode }}" target="_blank">[EMD]</a>
+    </td>
     <td>{{ type.margin | int }}</td>
     <td>{{ type.volatilityForWeek | int }}</td>
     <td>{{ type.avgDailyVolumeForWeek | int }}</td>
