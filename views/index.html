@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<table cellpadding="4">
+  {% for type in types %}
+  <tr>
+    <td><a href="" class="showMarketDetails" data-typeid="{{ type.typeID }}">{{ type.typeName }}</a></td>
+    <td>{{ type.margin | int }}</td>
+    <td>{{ type.volatilityForWeek | int }}</td>
+    <td>{{ type.avgDailyVolumeForWeek | int }}</td>
+    <td>{{ type.sell }}</td>
+    <td>{{ type.buy }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
