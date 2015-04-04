@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="well">
+  <form method="POST" action="">
+    <div class="form-group">
+      <label for="paste">Estimate</label>
+      <textarea class="form-control" rows="7" id="paste" name="paste">{{ paste }}</textarea>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+{% if err %}
+  <pre>{{ err }}</pre>
+{% endif %}
+
+{% if types %}
+  <table class="appraisal table table-hover table-bordered table-condensed table-striped">
+    <tr>
+      <th></th>
+      <th>Type</th>
+      <th>Volume</th>
+      <th>Sell</th>
+      <th>Buy</th>
+    </tr>
+    {% for type in types %}
+      <tr>
+        <td>{{ type.count }}</td>
+        <td><img class="type" src="https://image.eveonline.com/Type/{{ type.typeID }}_32.png"><a href="" class="showMarketDetails" data-typeid="{{ type.typeID }}">{{ type.typeName }}</a></td>
+        <td>{{ type.volume }}</td>
+        <td>{{ type.sell | round(2) }}</td>
+        <td>{{ type.buy | round(2) }}</td>
+      </tr>
+    {% endfor %}
+    <tr>
+      <th colspan="2" class="totals">Totals:</th>
+      <td>{{ totals.volume | round(3) }}</td>
+      <td>{{ totals.sell | round(2) }}</td>
+      <td>{{ totals.buy | round(2) }}</td>
+    </tr>
+  </table>
+{% endif %}
+
+{% endblock %}

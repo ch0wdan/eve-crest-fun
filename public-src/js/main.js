@@ -1,5 +1,6 @@
 var $ = require('jquery');
 var _ = require('lodash');
+var moment = require('moment');
 
 $(document).ready(function () {
 
@@ -15,7 +16,17 @@ $(document).ready(function () {
       var el = $(this);
       CCPEVE.showInfo(el.data('typeid'), el.data('itemid'));
       return false;
+    })
+
+  function updateTimes () {
+    $('time.moment').each(function () {
+      var el = $(this);
+      var datetime = el.attr('datetime');
+      el.text(moment(datetime).fromNow());
     });
+    setTimeout(updateTimes, 1000);
+  }
+  updateTimes();
 
   /*
   if ($('body').hasClass('eve-untrusted') && !CCPEVE.mock) {

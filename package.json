@@ -12,6 +12,7 @@
     "async": "^0.9.0",
     "bluebird": "^2.9.16",
     "body-parser": "^1.12.2",
+    "bootstrap": "^3.3.4",
     "browserify-middleware": "^5.0.2",
     "commander": "^2.7.1",
     "connect-flash": "^0.1.1",
@@ -36,11 +37,19 @@
     "passport-local": "^1.0.0",
     "request": "^2.54.0",
     "require-dir": "^0.3.0",
+    "rework": "^1.0.1",
+    "rework-npm": "^1.0.0",
     "sqlite3": "^3.0.5",
     "winston": "^0.9.0"
   },
   "optionalDependencies": {
     "blessed": "0.0.51",
     "zmq": "^2.10.0"
+  },
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "mocha": "^2.2.1",
+    "mockery": "^1.4.0",
+    "nodemock": "^0.3.4"
   }
 }

@@ -1,0 +1,10 @@
+@import "bootstrap/dist/css/bootstrap.css";
+@import "bootswatch/slate/bootstrap.css";
+
+body { }
+
+table.appraisal, table.margins { width: 100%; font-size: 0.85em; }
+
+table.appraisal tbody th.totals { text-align: right; }
+table.appraisal tbody td a { display: block; }
+table.appraisal tbody td img.type { float: left; width: 1.75em; height: 1.75em; margin-right: 0.5em }

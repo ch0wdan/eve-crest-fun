@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<table class="margins table table-hover table-bordered table-condensed table-striped">
+  <tr>
+    <th>Type</th>
+    <th>Sell</th>
+    <th>Buy</th>
+    <th>Margin</th>
+    <th>Volatility</th>
+    <th>Volume</th>
+    <th>Updated at</th>
+  </tr>
+  {% for type in types %}
+  <tr>
+    <td>
+      <img class="type" src="https://image.eveonline.com/Type/{{ type.typeID }}_32.png">
+      <a href="" class="showMarketDetails" data-typeid="{{ type.typeID }}">{{ type.typeName }}</a>
+      <a href="http://eve-marketdata.com/price_check.php?type_name_header={{ type.typeName | urlencode }}" target="_blank">[EMD]</a>
+    </td>
+    <td>{{ type.sell }}<br>({{ (type.jita.sell) | round(2, 'floor') }})</td>
+    <td>{{ type.buy }}<br>({{ (type.jita.buy) | round(2, 'floor') }})</td>
+    <td>{{ type.margin | int }}</td>
+    <td>{{ type.volatilityForWeek | int }}</td>
+    <td>{{ type.avgDailyVolumeForWeek | int }}</td>
+    <td><time class="moment" datetime="{{ type.updatedAt }}" title="{{ type.updatedAt }}">{{ type.updatedAtLabel }}<time></td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
