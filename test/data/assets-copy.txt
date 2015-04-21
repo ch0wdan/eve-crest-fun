@@ -1,0 +1,37 @@
+Artificial Neural Network	33	Salvaged Materials			0.33 m3
+Attainment Decryptor	1	Generic Decryptor			0.10 m3
+Augmentation Decryptor	1	Generic Decryptor			0.10 m3
+Broken Drone Transceiver	6	Salvaged Materials			0.06 m3
+Burned Logic Circuit	394	Salvaged Materials			3.94 m3
+Caldari Encryption Methods	5	Science			0.05 m3
+Carbon	17	General			0.17 m3
+Charred Micro Circuit	268	Salvaged Materials			2.68 m3
+Conductive Polymer	8	Salvaged Materials			0.08 m3
+Damaged Artificial Neural Network	271	Salvaged Materials			2.71 m3
+Datacore - Hydromagnetic Physics	16	Datacores			1.60 m3
+Dread Guristas Spatial Destabilization Battery Blueprint		Structures - ECM Jamming Array Blueprints			0.01 m3
+Enhanced Ward Console	31	Salvaged Materials			0.31 m3
+Fried Interface Circuit	222	Salvaged Materials			2.22 m3
+High-Tech Data Chip	2	Miscellaneous			0.02 m3
+High-Tech Scanner	2	Miscellaneous			0.02 m3
+High-Tech Small Arms	2	Miscellaneous			0.02 m3
+Intact Shield Emitter	37	Salvaged Materials			0.37 m3
+Interface Circuit	39	Salvaged Materials			0.39 m3
+Large Ancillary Armor Repairer Blueprint		Fueled Armor Repairer Blueprint			0.01 m3
+Logic Circuit	52	Salvaged Materials			0.52 m3
+Malfunctioning Shield Emitter	396	Salvaged Materials			3.96 m3
+Metal Scraps	6	Commodities			0.06 m3
+Micro Circuit	26	Salvaged Materials			0.26 m3
+Parity Decryptor	2	Generic Decryptor			0.20 m3
+Power Circuit	20	Salvaged Materials			0.20 m3
+Power Couplings	70	Materials and Compounds			7 m3
+Process Decryptor	1	Generic Decryptor			0.10 m3
+Reactive Armor Hardener Blueprint		Armor Resistance Shift Hardener Blueprint			0.01 m3
+Scorched Telemetry Processor	399	Salvaged Materials			3.99 m3
+Small Particle Dispersion Augmentor II Blueprint		Rig Blueprint			0.01 m3
+Spare Parts	123	Materials and Compounds			12.30 m3
+Spatial Attunement Unit	13	Construction Components			13 m3
+Target Spectrum Breaker Blueprint		Target Breaker Blueprint			0.01 m3
+Telemetry Processor	35	Salvaged Materials			0.35 m3
+Tripped Power Circuit	381	Salvaged Materials			3.81 m3
+Ward Console	265	Salvaged Materials			2.65 m3

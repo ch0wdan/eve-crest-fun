@@ -1,0 +1,497 @@
+[
+  {
+      "_id" : "11978:10000043",
+      "regionID" : 10000043,
+      "typeID" : 11978,
+      "typeName" : "Scimitar",
+      "volume" : 89000,
+      "buy" : 1.33274e+008,
+      "sell" : 1.435e+008
+  },
+  {
+      "_id" : "12011:10000043",
+      "regionID" : 10000043,
+      "typeID" : 12011,
+      "typeName" : "Eagle",
+      "volume" : 101000,
+      "buy" : 176003602.1100000100000000,
+      "sell" : 1.99e+008
+  },
+  {
+      "_id" : "31790:10000043",
+      "regionID" : 10000043,
+      "typeID" : 31790,
+      "typeName" : "Medium Core Defense Field Extender I",
+      "volume" : 10,
+      "buy" : 1607300.1100000001000000,
+      "sell" : 1849999.9900000000000000
+  },
+  {
+      "_id" : "31748:10000043",
+      "regionID" : 10000043,
+      "typeID" : 31748,
+      "typeName" : "Medium Anti-Kinetic Screen Reinforcer II",
+      "volume" : 10,
+      "buy" : 3000000.2500000000000000,
+      "sell" : 4.295e+006
+  },
+  {
+      "_id" : "31360:10000043",
+      "regionID" : 10000043,
+      "typeID" : 31360,
+      "typeName" : "Medium Ancillary Current Router I",
+      "volume" : 10,
+      "buy" : 3300000.0499999998000000,
+      "sell" : 3659999.7200000002000000
+  },
+  {
+      "_id" : "28668:10000043",
+      "regionID" : 10000043,
+      "typeID" : 28668,
+      "typeName" : "Nanite Repair Paste",
+      "volume" : 0.0100000000000000,
+      "buy" : 20009.4599999999990000,
+      "sell" : 17000
+  },
+  {
+      "_id" : "23031:10000043",
+      "regionID" : 10000043,
+      "typeID" : 23031,
+      "typeName" : "Caldari Navy Thorium Charge M",
+      "volume" : 0.0125000000000000,
+      "buy" : 609.6000000000000200,
+      "sell" : 659.6599999999999700
+  },
+  {
+      "_id" : "23025:10000043",
+      "regionID" : 10000043,
+      "typeID" : 23025,
+      "typeName" : "Caldari Navy Antimatter Charge M",
+      "volume" : 0.0125000000000000,
+      "buy" : 660,
+      "sell" : 677.6799999999999500
+  },
+  {
+      "_id" : "12805:10000043",
+      "regionID" : 10000043,
+      "typeID" : 12805,
+      "typeName" : "Spike M",
+      "volume" : 0.0125000000000000,
+      "buy" : 105.0600000000000000,
+      "sell" : 120
+  },
+  {
+      "_id" : "12058:10000043",
+      "regionID" : 10000043,
+      "typeID" : 12058,
+      "typeName" : "10MN Afterburner II",
+      "volume" : 5,
+      "buy" : 1868783.9099999999000000,
+      "sell" : 2.2e+006
+  },
+  {
+      "_id" : "10190:10000043",
+      "regionID" : 10000043,
+      "typeID" : 10190,
+      "typeName" : "Magnetic Field Stabilizer II",
+      "volume" : 5,
+      "buy" : 735000,
+      "sell" : 710000
+  },
+  {
+      "_id" : "8641:10000043",
+      "regionID" : 10000043,
+      "typeID" : 8641,
+      "typeName" : "Large S95a Remote Shield Booster",
+      "volume" : 25,
+      "buy" : 351027.4299999999900000,
+      "sell" : 393000
+  },
+  {
+      "_id" : "3841:10000043",
+      "regionID" : 10000043,
+      "typeID" : 3841,
+      "typeName" : "Large Shield Extender II",
+      "volume" : 20,
+      "buy" : 798001.0100000000100000,
+      "sell" : 804996.6500000000200000
+  },
+  {
+      "_id" : "3082:10000043",
+      "regionID" : 10000043,
+      "typeID" : 3082,
+      "typeName" : "250mm Railgun II",
+      "volume" : 10,
+      "buy" : 1.28001e+006,
+      "sell" : 1369999.5800000001000000
+  },
+  {
+      "_id" : "2301:10000043",
+      "regionID" : 10000043,
+      "typeID" : 2301,
+      "typeName" : "EM Ward Field II",
+      "volume" : 5,
+      "buy" : 1350006.0200000000000000,
+      "sell" : 1498991.9700000000000000
+  },
+  {
+      "_id" : "2281:10000043",
+      "regionID" : 10000043,
+      "typeID" : 2281,
+      "typeName" : "Adaptive Invulnerability Field II",
+      "volume" : 5,
+      "buy" : 1819600.7400000000000000,
+      "sell" : 1.602e+006
+  },
+  {
+      "_id" : "2048:10000043",
+      "regionID" : 10000043,
+      "typeID" : 2048,
+      "typeName" : "Damage Control II",
+      "volume" : 5,
+      "buy" : 343600,
+      "sell" : 369000.7700000000200000
+  },
+  {
+      "_id" : "1541:10000043",
+      "regionID" : 10000043,
+      "typeID" : 1541,
+      "typeName" : "Power Diagnostic System II",
+      "volume" : 5,
+      "buy" : 462700.0200000000200000,
+      "sell" : 500000
+  },
+  {
+      "_id" : "230:10000043",
+      "regionID" : 10000043,
+      "typeID" : 230,
+      "typeName" : "Antimatter Charge M",
+      "volume" : 0.0125000000000000,
+      "buy" : 63.5499999999999970,
+      "sell" : 78
+  },
+  {
+      "_id" : "2488:10000043",
+      "regionID" : 10000043,
+      "typeID" : 2488,
+      "typeName" : "Warrior II",
+      "volume" : 5,
+      "buy" : 266000.1500000000200000,
+      "sell" : 274005.9799999999800000
+  },
+  {
+      "_id" : "23711:10000043",
+      "regionID" : 10000043,
+      "typeID" : 23711,
+      "typeName" : "Light Armor Maintenance Bot I",
+      "volume" : 5,
+      "buy" : 2501.4499999999998000,
+      "sell" : 14400
+  },
+  {
+      "_id" : "1447:10000042",
+      "regionID" : 10000043,
+      "typeID" : 1447,
+      "typeName" : "Capacitor Power Relay II",
+      "volume" : 5,
+      "buy" : 200007.7699999999900000,
+      "sell" : 460946.0600000000000000
+  },
+  {
+      "_id" : "2205:10000042",
+      "regionID" : 10000043,
+      "typeID" : 2205,
+      "typeName" : "Acolyte II",
+      "volume" : 5,
+      "buy" : 260007.2200000000000000,
+      "sell" : 300000
+  },
+  {
+      "_id" : "34205:10000043",
+      "regionID" : 10000043,
+      "typeID" : 34205,
+      "typeName" : "Process Decryptor",
+      "volume" : 0.1000000000000000,
+      "buy" : 245000.1499999999900000,
+      "sell" : 280000
+  },
+  {
+      "_id" : "34204:10000043",
+      "regionID" : 10000043,
+      "typeID" : 34204,
+      "typeName" : "Parity Decryptor",
+      "volume" : 0.1000000000000000,
+      "buy" : 961000.1200000000000000,
+      "sell" : 800000
+  },
+  {
+      "_id" : "34203:10000043",
+      "regionID" : 10000043,
+      "typeID" : 34203,
+      "typeName" : "Augmentation Decryptor",
+      "volume" : 0.1000000000000000,
+      "buy" : 603000.6099999999900000,
+      "sell" : 550000
+  },
+  {
+      "_id" : "34202:10000043",
+      "regionID" : 10000043,
+      "typeID" : 34202,
+      "typeName" : "Attainment Decryptor",
+      "volume" : 0.1000000000000000,
+      "buy" : 2200096.0600000001000000,
+      "sell" : 2800094.0699999998000000
+  },
+  {
+      "_id" : "33195:10000043",
+      "regionID" : 10000043,
+      "typeID" : 33195,
+      "typeName" : "Spatial Attunement Unit",
+      "volume" : 1,
+      "buy" : 8545,
+      "sell" : 8512.5499999999993000
+  },
+  {
+      "_id" : "25625:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25625,
+      "typeName" : "Enhanced Ward Console",
+      "volume" : 0.0100000000000000,
+      "buy" : 2778000.2799999998000000,
+      "sell" : 2.999e+006
+  },
+  {
+      "_id" : "25620:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25620,
+      "typeName" : "Interface Circuit",
+      "volume" : 0.0100000000000000,
+      "buy" : 300000.0100000000100000,
+      "sell" : 300000
+  },
+  {
+      "_id" : "25619:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25619,
+      "typeName" : "Logic Circuit",
+      "volume" : 0.0100000000000000,
+      "buy" : 600212.0100000000100000,
+      "sell" : 628000
+  },
+  {
+      "_id" : "25618:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25618,
+      "typeName" : "Micro Circuit",
+      "volume" : 0.0100000000000000,
+      "buy" : 3000,
+      "sell" : 4296.9700000000003000
+  },
+  {
+      "_id" : "25617:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25617,
+      "typeName" : "Power Circuit",
+      "volume" : 0.0100000000000000,
+      "buy" : 1.22102e+006,
+      "sell" : 1.1e+006
+  },
+  {
+      "_id" : "25616:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25616,
+      "typeName" : "Artificial Neural Network",
+      "volume" : 0.0100000000000000,
+      "buy" : 1000,
+      "sell" : 1229.9900000000000000
+  },
+  {
+      "_id" : "25608:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25608,
+      "typeName" : "Intact Shield Emitter",
+      "volume" : 0.0100000000000000,
+      "buy" : 220002.1200000000000000,
+      "sell" : 275325.3800000000000000
+  },
+  {
+      "_id" : "25607:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25607,
+      "typeName" : "Telemetry Processor",
+      "volume" : 0.0100000000000000,
+      "buy" : 4229.6199999999999000,
+      "sell" : 4745.9799999999996000
+  },
+  {
+      "_id" : "25606:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25606,
+      "typeName" : "Ward Console",
+      "volume" : 0.0100000000000000,
+      "buy" : 4900,
+      "sell" : 4600
+  },
+  {
+      "_id" : "25604:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25604,
+      "typeName" : "Conductive Polymer",
+      "volume" : 0.0100000000000000,
+      "buy" : 255.0800000000000100,
+      "sell" : 275.4800000000000200
+  },
+  {
+      "_id" : "25601:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25601,
+      "typeName" : "Fried Interface Circuit",
+      "volume" : 0.0100000000000000,
+      "buy" : 3754.0500000000002000,
+      "sell" : 4000
+  },
+  {
+      "_id" : "25600:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25600,
+      "typeName" : "Burned Logic Circuit",
+      "volume" : 0.0100000000000000,
+      "buy" : 37120,
+      "sell" : 37000
+  },
+  {
+      "_id" : "25599:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25599,
+      "typeName" : "Charred Micro Circuit",
+      "volume" : 0.0100000000000000,
+      "buy" : 151.1999999999999900,
+      "sell" : 152
+  },
+  {
+      "_id" : "25598:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25598,
+      "typeName" : "Tripped Power Circuit",
+      "volume" : 0.0100000000000000,
+      "buy" : 29050,
+      "sell" : 29298.9300000000000000
+  },
+  {
+      "_id" : "25597:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25597,
+      "typeName" : "Damaged Artificial Neural Network",
+      "volume" : 0.0100000000000000,
+      "buy" : 189,
+      "sell" : 200
+  },
+  {
+      "_id" : "25596:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25596,
+      "typeName" : "Broken Drone Transceiver",
+      "volume" : 0.0100000000000000,
+      "buy" : 165.0999999999999900,
+      "sell" : 195
+  },
+  {
+      "_id" : "25589:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25589,
+      "typeName" : "Malfunctioning Shield Emitter",
+      "volume" : 0.0100000000000000,
+      "buy" : 240,
+      "sell" : 221
+  },
+  {
+      "_id" : "25588:10000043",
+      "regionID" : 10000043,
+      "typeID" : 25588,
+      "typeName" : "Scorched Telemetry Processor",
+      "volume" : 0.0100000000000000,
+      "buy" : 203.0999999999999900,
+      "sell" : 223.9300000000000100
+  },
+  {
+      "_id" : "21589:10000043",
+      "regionID" : 10000043,
+      "typeID" : 21589,
+      "typeName" : "Power Couplings",
+      "volume" : 0.1000000000000000,
+      "buy" : 299.0699999999999900,
+      "sell" : 133.2299999999999900
+  },
+  {
+      "_id" : "21588:10000043",
+      "regionID" : 10000043,
+      "typeID" : 21588,
+      "typeName" : "Spare Parts",
+      "volume" : 0.1000000000000000,
+      "buy" : 24.5100000000000020,
+      "sell" : 500
+  },
+  {
+      "_id" : "20171:10000043",
+      "regionID" : 10000043,
+      "typeID" : 20171,
+      "typeName" : "Datacore - Hydromagnetic Physics",
+      "volume" : 0.1000000000000000,
+      "buy" : 112100,
+      "sell" : 117889.9299999999900000
+  },
+  {
+      "_id" : "17894:10000043",
+      "regionID" : 10000043,
+      "typeID" : 17894,
+      "typeName" : "High-Tech Scanner",
+      "volume" : 0.0100000000000000,
+      "buy" : 1003.1300000000000000,
+      "sell" : 1099
+  },
+  {
+      "_id" : "15331:10000043",
+      "regionID" : 10000043,
+      "typeID" : 15331,
+      "typeName" : "Metal Scraps",
+      "volume" : 0.0100000000000000,
+      "buy" : 1699.0599999999999000,
+      "sell" : 1500
+  },
+  {
+      "_id" : "9826:10000043",
+      "regionID" : 10000043,
+      "typeID" : 9826,
+      "typeName" : "Carbon",
+      "volume" : 0.0100000000000000,
+      "buy" : 385.8800000000000000,
+      "sell" : 240
+  },
+  {
+      "_id" : "21790:10000043",
+      "regionID" : 10000043,
+      "typeID" : 21790,
+      "typeName" : "Caldari Encryption Methods",
+      "volume" : 0.0100000000000000,
+      "buy" : 599.9900000000000100,
+      "sell" : 1199.9600000000000000
+  },
+  {
+      "_id" : "17893:10000043",
+      "regionID" : 10000043,
+      "typeID" : 17893,
+      "typeName" : "High-Tech Data Chip",
+      "volume" : 0.0100000000000000,
+      "buy" : 969.0599999999999500,
+      "sell" : 2500
+  },
+  {
+      "_id" : "17897:10000043",
+      "regionID" : 10000043,
+      "typeID" : 17897,
+      "typeName" : "High-Tech Small Arms",
+      "volume" : 0.0100000000000000,
+      "buy" : 966.1000000000000200,
+      "sell" : 3899.9800000000000000
+  }
+]

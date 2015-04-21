@@ -1,0 +1,29 @@
+[Eagle, Eagle - Freedom Fleet - DPS]
+Damage Control II
+Power Diagnostic System II
+Magnetic Field Stabilizer II
+Magnetic Field Stabilizer II
+
+Large Shield Extender II
+Large Shield Extender II
+Adaptive Invulnerability Field II
+Adaptive Invulnerability Field II
+10MN Afterburner II
+EM Ward Field II
+
+250mm Railgun II
+250mm Railgun II
+250mm Railgun II
+250mm Railgun II
+250mm Railgun II
+
+Medium Core Defense Field Extender I
+Medium Core Defense Field Extender I
+
+
+
+Antimatter Charge M x5000
+Spike M x3000
+Caldari Navy Antimatter Charge M x3000
+Caldari Navy Thorium Charge M x3000
+Nanite Repair Paste x100

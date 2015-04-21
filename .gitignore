@@ -4,7 +4,7 @@ config.json
 *.db
 node_modules/
 images/
-data/
+data/*.sqlite
 
 # Windows image file caches
 Thumbs.db
