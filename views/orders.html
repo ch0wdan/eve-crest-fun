@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style type="text/css">
+  table.orders th.bidLabel {
+    font-weight: bold;
+    padding: 1em;
+  }
+  table.orders td {  }
+  table.orders td.typeName { width: 50% }
+  table.orders td.typeName img { height: 24px; }
+  table.orders td.price { width: 25%; text-align: right }
+  table.orders td.volume { width: 25%; text-align: center }
+  table.orders td.station { width: 15%; overflow: hidden; white-space: nowrap; }
+</style>
+{#
+<pre>{{ ordersJson }}</pre>
+#}
+
+{% macro orderRow(order) %}
+  <tr>
+    <td class="typeName">
+      <img class="type" src="https://image.eveonline.com/Type/{{ order.typeID }}_32.png">
+      <a href="" class="showMarketDetails" data-typeid="{{ order.typeID }}">{{ order.typeName }}</a>
+      <a href="http://eve-marketdata.com/price_check.php?type_name_header={{ order.typeName | urlencode }}" target="_blank">[EMD]</a>
+    </td>
+    <td class="price">
+      O: {{ order.price }}<br>M: {{ order.marketPrice }}
+    </td>
+    <td class="volume">{{ order.volRemaining }} / {{ order.volEntered }}</td>
+    <td class="station">{{ order.beef }} {{ order.stationName }}</td>
+  </tr>
+{% endmacro %}
+
+<table class="orders table table-hover table-bordered table-condensed table-striped">
+  {% for characterName, orders in ordersByCharacter %}
+    <tr><td colspan="4">{{ characterName }}</td></tr>
+    <tr><td colspan="4">Sell</td></tr>
+    {% for order in orders['0'] %}
+      {{ orderRow(order) }}
+    {% endfor %}
+    <tr><td colspan="4">Buy</td></tr>
+    {% for order in orders['1'] %}
+      {{ orderRow(order) }}
+    {% endfor %}
+  {% endfor %}
+</table>
+
+{% endblock %}
