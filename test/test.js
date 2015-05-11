@@ -18,6 +18,7 @@ var models = require('../lib/models');
 describe('MarketType', function () {
 
   var regionID = 10000043;
+  var volumes = { 11978: 10000, 12011: 10000 };
 
   var docsByTypeNameAndRegionID = _.indexBy(docs, function (object) {
     return object.typeName + ':' + object.regionID;
@@ -64,7 +65,6 @@ describe('MarketType', function () {
   mockery.registerMock('../lib/eveData', {
     dbEVE: function (tableName) {
       if (tableName === 'invVolumes') {
-        var volumes = { 11978: 10000, 12011: 10000 };
         return {
           whereIn: function (column, typeID) {
             if (column === 'typeID' && typeID in volumes) {
