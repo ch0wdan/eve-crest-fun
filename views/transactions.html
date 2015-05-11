@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<table class="table table-hover table-bordered table-condensed table-striped">
+  {% for typeName, characters in transactions %}
+    <tr>
+      <td>
+        <p>{{ typeName }}</p>
+        <table class="table table-hover table-bordered table-condensed table-striped">
+          {% for characterName, characterTransactions in characters %}
+            <tr>
+              <td>
+                <p>{{ characterName }}</p>
+                <table class="table table-hover table-bordered table-condensed table-striped">
+                  {% for transaction in characterTransactions %}
+                    <tr>
+                      <td>{{ transaction.transactionDateTime }}</td>
+                      <td>{{ transaction.transactionType }}</td>
+                      <td>{{ transaction.quantity }}</td>
+                      <td>{{ transaction.price }}</td>
+                      <td>{{ transaction.stationName }}</td>
+                    </tr>
+                  {% endfor %}
+                </table>
+              </td>
+            </tr>
+          {% endfor %}
+        </table>
+      </td>
+    </tr>
+  {% endfor %}
+</table>
+
+
+{% endblock %}
