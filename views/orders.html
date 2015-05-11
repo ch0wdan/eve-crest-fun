@@ -8,6 +8,8 @@
     padding: 1em;
   }
   table.orders td {  }
+  table.orders td ul { list-style-type: none }
+  table.orders td.price input { text-align: right }
   table.orders td.typeName { width: 50% }
   table.orders td.typeName img { height: 24px; }
   table.orders td.price { width: 25%; text-align: right }
@@ -26,8 +28,11 @@
       <a href="http://eve-marketdata.com/price_check.php?type_name_header={{ order.typeName | urlencode }}" target="_blank">[EMD]</a>
     </td>
     <td class="price">
-      {{ order.price }} / {{ order.marketPrice }} /
-      <input type="text" value="{{ order.newPrice }}">
+      <ul>
+        <li>{{ order.price }}</li>
+        <li>{{ order.marketPrice }}</li>
+        <li><input type="text" value="{{ order.newPrice }}"></li>
+      </ul>
     </td>
     <td class="volume">{{ order.volRemaining }} / {{ order.volEntered }}</td>
     <td class="station">{{ order.beef }} {{ order.stationName }}</td>
