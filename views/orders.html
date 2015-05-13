@@ -9,12 +9,12 @@
   }
   table.orders td {  }
   table.orders td ul { list-style-type: none }
-  table.orders td.price input { text-align: right }
+  table.orders td.price input { text-align: right; width: 7em; }
   table.orders td.typeName { width: 50% }
   table.orders td.typeName img { height: 24px; }
-  table.orders td.price { width: 25%; text-align: right }
-  table.orders td.volume { width: 25%; text-align: center }
-  table.orders td.station { width: 15%; overflow: hidden; white-space: nowrap; }
+  table.orders td.price { width: 15%; text-align: right }
+  table.orders td.volume { width: 15%; text-align: center }
+  table.orders td.station { width: 10%; overflow: hidden; white-space: nowrap; }
 </style>
 {#
 <pre>{{ ordersJson }}</pre>
@@ -27,28 +27,30 @@
       <a href="" class="showMarketDetails" data-typeid="{{ order.typeID }}">{{ order.typeName }}</a>
       <a href="http://eve-marketdata.com/price_check.php?type_name_header={{ order.typeName | urlencode }}" target="_blank">[EMD]</a>
     </td>
-    <td class="price">
-      <ul>
-        <li>{{ order.price }}</li>
-        <li>{{ order.marketPrice }}</li>
-        <li><input type="text" value="{{ order.newPrice }}"></li>
-      </ul>
-    </td>
-    <td class="volume">{{ order.volRemaining }} / {{ order.volEntered }}</td>
-    <td class="station">{{ order.beef }} {{ order.stationName }}</td>
+    <td class="volume">{{ order.volRemaining }}&nbsp;/&nbsp;{{ order.volEntered }}</td>
+    <td class="price">{{ order.price }}</td>
+    <td class="price">{{ order.marketPrice }}</td>
+    <td class="price"><input type="text" value="{{ order.newPrice }}"></td>
   </tr>
 {% endmacro %}
 
 <table class="orders table table-hover table-bordered table-condensed table-striped">
-  {% for characterName, orders in ordersByCharacter %}
-    <tr><td colspan="4">{{ characterName }}</td></tr>
-    <tr><td colspan="4">Sell</td></tr>
-    {% for order in orders[false] %}
-      {{ orderRow(order) }}
-    {% endfor %}
-    <tr><td colspan="4">Buy</td></tr>
-    {% for order in orders[true] %}
-      {{ orderRow(order) }}
+  {% for characterName, ordersByStation in ordersByCharacter %}
+    <tr><td colspan="5">{{ characterName }}</td></tr>
+    {% for stationName, orders in ordersByStation %}
+      <tr><td colspan="5">{{ stationName }}</td></tr>
+      {% if orders[false] %}
+        <tr><td colspan="5">Sell</td></tr>
+        {% for order in orders[false] %}
+          {{ orderRow(order) }}
+        {% endfor %}
+      {% endif %}
+      {% if orders[true] %}
+        <tr><td colspan="5">Buy</td></tr>
+        {% for order in orders[true] %}
+          {{ orderRow(order) }}
+        {% endfor %}
+      {% endif %}
     {% endfor %}
   {% endfor %}
 </table>
