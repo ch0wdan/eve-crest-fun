@@ -28,25 +28,26 @@
       <a href="http://eve-marketdata.com/price_check.php?type_name_header={{ order.typeName | urlencode }}" target="_blank">[EMD]</a>
     </td>
     <td class="volume">{{ order.volRemaining }}&nbsp;/&nbsp;{{ order.volEntered }}</td>
+    <td class="price">{{ order.oppositePrice }}<pre>{{ order.transactionsJSON }}</pre></td>
     <td class="price">{{ order.price }}</td>
     <td class="price">{{ order.marketPrice }}</td>
-    <td class="price"><input type="text" value="{{ order.newPrice }}"></td>
+    <td class="price"><input type="text" value="{{ order.newPrice }}" class="focusSelect"></td>
   </tr>
 {% endmacro %}
 
 <table class="orders table table-hover table-bordered table-condensed table-striped">
   {% for characterName, ordersByStation in ordersByCharacter %}
-    <tr><td colspan="5">{{ characterName }}</td></tr>
+    <tr><td colspan="6">{{ characterName }}</td></tr>
     {% for stationName, orders in ordersByStation %}
-      <tr><td colspan="5">{{ stationName }}</td></tr>
+      <tr><td colspan="6">{{ stationName }}</td></tr>
       {% if orders[false] %}
-        <tr><td colspan="5">Sell</td></tr>
+        <tr><td colspan="6">Sell</td></tr>
         {% for order in orders[false] %}
           {{ orderRow(order) }}
         {% endfor %}
       {% endif %}
       {% if orders[true] %}
-        <tr><td colspan="5">Buy</td></tr>
+        <tr><td colspan="6">Buy</td></tr>
         {% for order in orders[true] %}
           {{ orderRow(order) }}
         {% endfor %}
