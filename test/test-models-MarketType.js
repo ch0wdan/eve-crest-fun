@@ -62,35 +62,40 @@ describe('MarketType', function () {
 
   var MarketType = require('../lib/models/MarketType')(models, baseClass);
 
-  mockery.registerMock('../lib/eveData', {
-    dbEVE: function (tableName) {
-      if (tableName === 'invVolumes') {
-        return {
-          whereIn: function (column, typeID) {
-            if (column === 'typeID' && typeID in volumes) {
-              return Promise.resolve([{
-                typeid: typeid, volume: volumes[typeID]
-              }]);
-            }
-            return Promise.resolve([]);
-          }
-        };
-      }
-      return Promise.resolve([]);
-    }
-  });
-
   beforeEach(function (done) {
+
+    mockery.registerMock('../lib/eveData', {
+      dbEVE: function (tableName) {
+        if (tableName === 'invVolumes') {
+          return {
+            whereIn: function (column, typeID) {
+              if (column === 'typeID' && typeID in volumes) {
+                return Promise.resolve([{
+                  typeid: typeid, volume: volumes[typeID]
+                }]);
+              }
+              return Promise.resolve([]);
+            }
+          };
+        }
+        return Promise.resolve([]);
+      }
+    });
+
     mockery.enable({
       warnOnReplace: false,
       warnOnUnregistered: false,
       useCleanCache: true
     });
-    return done();
+
+    var main = require('../lib');
+    main.initShared({}, done);
+
   });
 
   afterEach(function (done) {
     mockery.disable();
+    mockery.deregisterAll();
     return done();
   });
 
@@ -111,21 +116,18 @@ describe('MarketType', function () {
       var sellOrderTotal = _.reduce(types, function (sum, type) {
         return sum + (type.count * type.sell);
       }, 0);
-
-      console.log(buyOrderTotal);
-      console.log(sellOrderTotal);
     }
 
     it('should parse the asset copypasta', function (done) {
 
       MarketType.parsePaste(regionID, assetPaste).then(function (result) {
-        console.log(JSON.stringify(result, null, '  '));
+        // console.log(JSON.stringify(result, null, '  '));
         return done();
       });
 
     });
 
-    it.skip('should parse the Scimitar fitting', function (done) {
+    it('should parse the Scimitar fitting', function (done) {
 
       var expectedCounts = {
         "Scimitar": 1,
@@ -150,7 +152,7 @@ describe('MarketType', function () {
 
     });
 
-    it.skip('should parse the Eagle fitting', function (done) {
+    it('should parse the Eagle fitting', function (done) {
 
       var expectedCounts = {
         "Eagle": 1,
