@@ -4,6 +4,8 @@ var moment = require('moment');
 
 $(document).ready(function () {
 
+  $('.focusSelect').focus(function () { $(this).select(); });
+
   $(document)
     .delegate('a.showMarketDetails', 'click', function () {
       var el = $(this);
