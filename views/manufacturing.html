@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style type="text/css">
+  table.blueprints th { padding: 0.25em; }
+  table.blueprints td { padding: 0.25em; }
+  table.blueprints tr.hasSkills { background-color: #353; }
+</style>
+
+<table class="blueprints">
+  <tr>
+    <th></th>
+    <th>Materials</th>
+    <th>Sell</th>
+    <th>Margin</th>
+    <th>%</th>
+  </tr>
+  {% for blueprint in blueprints %}
+  <tr class="{% if blueprint.activities.manufacturing.hasSkills %}hasSkills{% endif %}">
+    <td class="typeName">
+      <img class="type" src="https://image.eveonline.com/Type/{{ blueprint.blueprintTypeID }}_32.png">
+      <a href="" class="showMarketDetails" data-blueprintTypeID="{{ blueprint.blueprintTypeID }}">{{ blueprint.blueprintTypeName }}</a>
+    </td>
+    <td>{{ blueprint.activities.manufacturing.materialsTotalPrice | round(2) }}</td>
+    <td>{{ blueprint.activities.manufacturing.productsTotalPrice | round(2) }}</td>
+    <td>{{ blueprint.activities.manufacturing.priceMargin | round(2) }}</td>
+    <td>{{ blueprint.activities.manufacturing.priceMarginPercent | round(2) }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}
